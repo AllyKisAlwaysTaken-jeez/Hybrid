@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Generated Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background:#f9fafb;
+      line-height: 1.6;
+    }
+    .section {
+      margin-bottom: 2rem;
+      padding: 1rem 1.5rem;
+      background:white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 { margin-top:0; }
+    ul { margin:0; padding-left: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>Your Generated Portfolio Preview</h1>
+
+  <div class="section">
+    <h2>Industry</h2>
+    <p>{{ industry }}</p>
+  </div>
+
+  <div class="section">
+    <h2>Style</h2>
+    <p>{{ style }}</p>
+  </div>
+
+  <div class="section">
+    <h2>Goals</h2>
+    <p>{{ goals }}</p>
+  </div>
+
+  <div class="section">
+    <h2>Copywriting</h2>
+    <p>{{ copywriting | safe }}</p>
+  </div>
+
+  <div class="section">
+    <h2>SEO Keywords</h2>
+    <ul>
+      {% for kw in seo %}
+      <li>{{ kw }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Design Guidelines</h2>
+    <ul>
+      {% for g in guidelines %}
+      <li>{{ g }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</body>
+</html>

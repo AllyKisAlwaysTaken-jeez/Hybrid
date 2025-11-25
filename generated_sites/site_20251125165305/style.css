@@ -1,0 +1,19 @@
+
+/* Minimalistic theme */
+:root {
+  --bg: #f7f3f1;
+  --card: #ffffff;
+  --accent: #d4a5a5; /* dusty rose */
+  --muted: #cdb9b9;
+  --text: #222;
+  --mono: 'Courier New', monospace;
+}
+body { background: var(--bg); color: var(--text); font-family: Arial, sans-serif; margin:0; }
+.container { max-width:1000px; margin:40px auto; padding:24px; }
+.header { display:flex; justify-content:space-between; align-items:center; }
+.hero { background:var(--card); padding:32px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); font-family: var(--mono); }
+.section { background: var(--card); margin-top:20px; padding:18px; border-radius:10px; }
+.btn { display:inline-block; padding:10px 14px; background:var(--accent); color:white; border-radius:8px; text-decoration:none; }
+.skills { display:flex; gap:8px; flex-wrap:wrap; }
+.skill { background:var(--muted); padding:6px 10px; border-radius:6px; font-family:var(--mono); }
+.footer { margin-top:30px; text-align:center; color:#666; font-size:0.9rem; }

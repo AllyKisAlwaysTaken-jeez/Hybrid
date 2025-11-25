@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+=======
+fastapi
+uvicorn
+requests
+beautifulsoup4
+pydantic
+nltk
+scikit-learn
+gunicorn 
+uvicorn 
+>>>>>>> a39c6b52ded0af1c65a2bf886e57685ceabdba98

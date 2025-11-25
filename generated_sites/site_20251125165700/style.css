@@ -1,0 +1,19 @@
+
+/* Bold theme */
+:root {
+  --bg: #0f172a;
+  --card: #071032;
+  --accent: #00c2ff;
+  --accent2: #ffd400;
+  --text: #ffffff;
+  --fancy: 'Impact, fantasy';
+}
+body { background: linear-gradient(120deg,#071032 0%, #0d1225 100%); color:var(--text); font-family: Arial, sans-serif; margin:0; }
+.container { max-width:1100px; margin:40px auto; padding:28px; }
+.header { display:flex; justify-content:space-between; align-items:center; }
+.hero { background:linear-gradient(90deg,var(--card), #13173a); padding:36px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.5); font-family: var(--fancy); }
+.section { background: rgba(255,255,255,0.03); margin-top:20px; padding:18px; border-radius:10px; border: 1px solid rgba(255,255,255,0.04); }
+.btn { display:inline-block; padding:10px 14px; background:var(--accent); color:#021024; border-radius:8px; font-family: var(--fancy); text-decoration:none; }
+.skills { display:flex; gap:10px; flex-wrap:wrap; }
+.skill { background:var(--accent2); color:#071032; padding:8px 12px; border-radius:14px; font-weight:bold; }
+.footer { margin-top:30px; text-align:center; color:#9aa0c0; font-size:0.9rem; }
